@@ -1,0 +1,82 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+/media
+/static
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Frontend
+node_modules/
+/frontend/dist
+/frontend/build
+.next/
+out/
+npm-debug.log
+yarn-error.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project-specific temp files
+temp.txt
+temp.md
+CHANGES.md
+CUSTOMER_SAVE_FIX.md
+EXACT_CHANGES_MADE.txt
+FINAL_STATUS.md
+FIXES_COMPLETE.md
+FIXES_SUMMARY.txt
+IMPLEMENTATION_SUMMARY.txt
+PRODUCTION_FIXES_SUMMARY.md
+PRODUCTION_FIX_REPORT.md
+QUICK_FIX_GUIDE.md
+QUICK_START.txt
+QUICK_TEST.md
+README_AT_A_GLANCE.txt
+README_COMPLETION_REPORT.txt
+TEST_VERIFICATION.md
+UI_ISSUES_DIAGNOSTIC.md
+VERIFICATION_CHECKLIST.txt
+VERIFY_FIXES.md

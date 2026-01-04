@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  /* Theme Configuration */
+  --color-primary: #4A90E2;
+  --color-secondary: #2563EB;
+
+  --animate-float: float 10s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) translateX(0); }
+    25% { transform: translateY(-30px) translateX(15px); }
+    50% { transform: translateY(-60px) translateX(-15px); }
+    75% { transform: translateY(-30px) translateX(15px); }
+  }
+}
+
+@layer base {
+  :root {
+    font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    
+    /* Better color defaults for a billing system */
+    color-scheme: light dark;
+    color: #213547;
+    background-color: #ffffff;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+  }
+
+  /* Ensure select options are always visible with white background and dark text */
+  select {
+    background-color: white;
+    color: #1f2937;
+  }
+
+  select option {
+    background-color: white;
+    color: #1f2937;
+  }
+
+  select option:checked {
+    background-color: #3b82f6;
+    background-image: linear-gradient(#3b82f6, #3b82f6);
+    color: white;
+  }
+
+  /* Ensure form field labels are always visible and dark */
+  label {
+    color: #111827 !important;
+  }
+
+  /* Fix all modal backdrops to use blur instead of black */
+  div[class*="inset-0"][class*="bg-black"][class*="bg-opacity"],
+  div[class*="inset-0"][class*="bg-gray"] {
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(4px) !important;
+  }
+
+  /* Resetting the default Vite flex centering so your UI can grow naturally */
+  #root {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      color: rgba(255, 255, 255, 0.87);
+      background-color: #0f172a; /* Deep slate for professional dark mode */
+    }
+  }
+}
