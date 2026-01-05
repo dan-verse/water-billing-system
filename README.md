@@ -2,7 +2,7 @@
 
 A comprehensive full-stack water utility billing management system built with Django REST Framework and React. Designed to streamline billing operations for water utilities serving 1000+ customers with automated meter reading processing and tiered consumption pricing.
 
-## 🎯 Overview
+## Overview
 
 This system provides an intelligent billing platform for water utilities that handles:
 - **Meter reading management** with anomaly detection (consumption spikes >200% flagged)
@@ -12,7 +12,7 @@ This system provides an intelligent billing platform for water utilities that ha
 - **Real-time dashboards** with KPIs and analytics
 - **Customer self-service** portal for bill and payment tracking
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────┐
@@ -31,7 +31,7 @@ This system provides an intelligent billing platform for water utilities that ha
 └─────────────────────────────────────────────────────────┘
 ```
 
-## 📋 Tech Stack
+## Tech Stack
 
 **Backend:**
 - Django 5.0.1 - Web framework
@@ -53,7 +53,7 @@ This system provides an intelligent billing platform for water utilities that ha
 - Git & GitHub - Version control
 - Virtual Environment - Dependency isolation
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.9+ (with venv)
@@ -121,7 +121,7 @@ npm run dev
 
 Frontend available at: `http://localhost:5173`
 
-## 📊 Key Features
+## Key Features
 
 ### 1. Meter Reading Management
 - **Manual input** by operators with reading date, consumption, billing period
@@ -143,7 +143,7 @@ Frontend available at: `http://localhost:5173`
 - **Late fees**: Applied after due date
 
 ### 3. Payment Processing
-- **Multiple payment methods**: M-Pesa, Card, Bank Transfer, Cash
+- **Multiple payment methods**: M-Pesa, Card, Bank Transfer, Cash (Still using prop data though)
 - **Payment verification** before status update
 - **Partial payments** supported
 - **Transaction reference** tracking
@@ -199,15 +199,7 @@ POST /api/token/
 - `GET /api/accounts/dashboard/summary/` - Dashboard KPIs
 - `GET /api/accounts/dashboard/recent_activity/` - Recent transactions
 
-## 🐛 Known Issues & Fixes
 
-### Fixed Issues
-✅ **Dashboard empty pages** - Fixed paginated response handling in MeterReadings, Bills, Payments
-✅ **Bill creation 400 error** - Changed from direct POST to use generate_bill endpoint
-✅ **Date input visibility** - Added missing Tailwind CSS text color classes
-✅ **Meter reading not showing** - Optimized async timing in modal refresh
-
-See [BUG_FIXES.md](BUG_FIXES.md) for detailed fixes and [RESOLUTION_SUMMARY.md](RESOLUTION_SUMMARY.md) for implementation details.
 
 ## 📈 Performance
 
@@ -238,7 +230,6 @@ See [BUG_FIXES.md](BUG_FIXES.md) for detailed fixes and [RESOLUTION_SUMMARY.md](
 │   └── vite.config.js          # Vite build config
 ├── README.md                   # This file
 ├── .gitignore                  # Git ignore rules
-└── BUG_FIXES.md                # Bug tracking & fixes
 ```
 
 ### Running Tests
@@ -295,8 +286,6 @@ See database migrations in `backend/accounts/migrations/` for detailed schema.
 7. Build frontend: `npm run build`
 8. Serve static files with Nginx
 
-See [QUICK_START.md](QUICK_START.md) for detailed setup guide.
-
 ## 📝 License
 
 This project is provided as-is for educational and commercial use.
@@ -304,12 +293,12 @@ This project is provided as-is for educational and commercial use.
 ## 👤 Author
 
 **Mbugua** - Full-stack developer
-- GitHub: [Your GitHub URL]
-- Email: [Your Email]
-- LinkedIn: [Your LinkedIn]
+- GitHub: [Davy](https://github.com/David1942-23)
+- Email: videmungai@gmail.com
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
+- My amazing supervisor for guiding me in every step of the development of this wonderful web application
 - Django REST Framework team for excellent API documentation
 - React community for comprehensive tooling
 - Tailwind CSS for modern utility-first styling
@@ -318,5 +307,5 @@ This project is provided as-is for educational and commercial use.
 ---
 
 **Last Updated**: January 5, 2026
-**Status**: Production Ready ✅
+
 **Version**: 1.0.0
